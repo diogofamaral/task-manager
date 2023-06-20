@@ -49,9 +49,9 @@ defineProps({
             </template>
         </div>
 
-        <div class="max-w-7xl mx-auto p-6 lg:p-8 text-center">
-            <h1 class="text-2xl">Welcome to Testing App</h1>
-            <p>Signup/Login and have fun!</p>
+        <div class="max-w-7xl mx-auto p-6 lg:p-8 text-center dark:text-white">
+            <h1 class="text-4xl">Welcome to Task Manager</h1>
+            <p class="text-xl">Signup/Login and have fun!</p>
         </div>
     </div>
 </template>

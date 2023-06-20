@@ -5,9 +5,19 @@
  */
 
 import axios from 'axios';
-window.axios = axios;
+import dayjs from 'dayjs';
+import DecoratedError from '@/Support/DecoratedError';
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+axios.defaults.withCredentials = true;
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+axios.interceptors.response.use(
+    response => Promise.resolve(response),
+    error => Promise.reject(new DecoratedError(error)),
+);
+
+window.axios = axios;
+window.dayjs = dayjs;
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
