@@ -85,7 +85,7 @@
                             </tbody>
                             <tbody v-else class="divide-y divide-gray-200 bg-white">
                                 <tr>
-                                    <td colspan="4" class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">No tasks yet</td>
+                                    <td colspan="5" class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">No tasks yet</td>
                                 </tr>
                             </tbody>
                         </table>
